@@ -2,7 +2,11 @@
 ## Title: LineageTrader
 ## Author: livepj
 ## Version: 0.0.1
+## SavedVariables: LineageTraderSaved
 
 EventHandler.lua
-whisperSopund.lua
+whisperSound.lua
+logic.lua
 index.lua
+setTab.lua
+listTab.lua
