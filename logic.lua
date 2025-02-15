@@ -10,8 +10,7 @@ Subscribe('PLAYER_LOGIN', function()
 end)
 
 local function Say(text)
-    print(text)
-    SendChatMessage(text, "CHANNEL", nil, 6)
+    SendChatMessage(text, "CHANNEL", nil, 7)
 end
 
 local i = 1
@@ -24,7 +23,7 @@ local function SaySell()
             newMsg = list[i].link
             msg = msg .. newMsg
             i = i + 1
-            if i > #list then
+            while i > #list do
                 i = i - #list
             end
         until #msg + #list[i].link >= 255 or i == firstI

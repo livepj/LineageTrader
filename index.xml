@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <!-- Подключаем шаблоны для вкладок -->
+    <Frame name="LineageTraderMainFrame" parent="UIParent" toplevel="true" hidden="true">
+        <Size x="400" y="300"/>
+        <Anchors>
+            <Anchor point="CENTER"/>
+        </Anchors>
+        <Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true" tileSize="16" edgeSize="16" insets="5,5,5,5"/>
+    </Frame>
+    
+    <!-- Подключаем шаблон вкладки -->
+    <Button name="Tab1" parent="LineageTraderMainFrame" inherits="OptionsFrameTabButtonTemplate">
+        <Size x="120" y="30"/>
+        <Text>Вкладка 1</Text>
+        <Anchors>
+            <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="10" y="-10"/>
+        </Anchors>
+    </Button>
+
+    <Button name="Tab2" parent="LineageTraderMainFrame" inherits="OptionsFrameTabButtonTemplate">
+        <Size x="120" y="30"/>
+        <Text>Вкладка 2</Text>
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="Tab1" x="5" y="0"/>
+        </Anchors>
+    </Button>
+</Ui>
